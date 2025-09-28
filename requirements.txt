@@ -1,0 +1,33 @@
+# Core app framework
+streamlit==1.37.0
+python-dotenv==1.0.1
+pandas==2.2.3
+numpy>=1.26.0
+requests>=2.31.0
+pillow==10.4.0
+openpyxl==3.1.5
+
+# GenAI APIs
+google-generativeai==0.7.2   # For Gemini (compatible with langchain-google-genai 1.0.8)
+langchain==0.2.14
+langchain-google-genai==1.0.8
+groq==0.10.0                 # For Llama/Groq API
+mistralai==0.4.2             # Mistral SDK v1+
+openai==1.46.0               # For DeepSeek (via OpenAI-compatible API)
+
+# Hugging Face + Transformers stack
+transformers==4.44.2         # Supports LLaVA-1.6
+torch==2.4.1                 # CPU; use torch==2.4.1+cu121 if CUDA GPU
+accelerate==1.10.1           # Efficient model loading
+bitsandbytes==0.43.3         # Optional: 4-bit quantization (GPU only, can drop if CPU-only)
+huggingface_hub==0.26.2      # Latest stable for model downloads
+safetensors==0.4.4           # Required for many HF models
+sentencepiece==0.2.0         # Required for tokenizers in some models
+protobuf==4.25.3             # Stable protobuf (avoids version mismatches)
+
+# Vision + image models
+timm==1.0.12                 # Often required for vision backbones in HF models
+opencv-python==4.10.0.84     # Useful for image pre/post-processing (optional but common)
+
+# Optional: if you use your custom package
+euriai                       # No version pinning; assume internal/private
