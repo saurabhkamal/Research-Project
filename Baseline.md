@@ -17,3 +17,23 @@ Evaluating: 100%|██████████| 20/20 [00:13<00:00,  1.51exampl
 ⏱ Total Time (s): 13.25 <br>
 📈 Throughput (examples/sec): 1.51 <br>
 
+⏱ Total Time: 13.25 seconds <br>
+It took all together about 13.25 seconds to run inference on 20 examples.
+
+📈 Throughput: 1.51 examples/sec<br>
+That means BLIP-2 answered about: <br>
+≈ 1.5 examples per second
+
+🔍 Why This Script Runs Faster Than DePlot Versions
+baseline notebook does only one inference per example:  BLIP-2(image + prompt) → answer
+
+📌 Key Takeaways
+
+✅ Baseline notebook is simple and fast — no table extraction.
+✅ It’s using BLIP-2’s standard image+prompt generation.
+
+
+
+
+
+
