@@ -22,3 +22,13 @@ A cache file (deplot_cache.pkl) stores earlier extracted table texts.
 If an image was previously processed, the code reads the extracted table from the cache rather than recomputing it.
 
 This dramatically cuts down repetitive calls to the expensive DePlot model.
+
+
+Instead of processing one image at a time, the new script lets DePlot process multiple charts at once in a batch, which is much faster and more efficient on GPU hardware.
+
+<img width="2158" height="210" alt="image" src="https://github.com/user-attachments/assets/fd1a6ce1-2166-4b50-ad70-3bd27e4b4d35" />
+
+✔ Speed Metrics
+- 47.56 seconds total for 20 examples → ~2.38 seconds per question.
+- 0.42 examples/sec means less than half a question per second.
+
