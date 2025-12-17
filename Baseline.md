@@ -7,13 +7,13 @@ For each example:
 4. It parses the model’s answer and compares it to the ground truth.
 5. It records timing and accuracy.
 
-Total examples: 20
-🚀 Running inference …
-Evaluating: 100%|██████████| 20/20 [00:13<00:00,  1.51example/s]
-✅ Inference completed!
-📊 MC Accuracy: 0.4
-📊 TF Accuracy: 0.6
-📊 Weighted Avg: 0.5
-⏱ Total Time (s): 13.25
-📈 Throughput (examples/sec): 1.51
+Total examples: 20 <br>
+🚀 Running inference … <br>
+Evaluating: 100%|██████████| 20/20 [00:13<00:00,  1.51example/s] <br>
+✅ Inference completed! <br>
+📊 MC Accuracy: 0.4 <br>
+📊 TF Accuracy: 0.6 <br>
+📊 Weighted Avg: 0.5 <br>
+⏱ Total Time (s): 13.25 <br>
+📈 Throughput (examples/sec): 1.51 <br>
 
